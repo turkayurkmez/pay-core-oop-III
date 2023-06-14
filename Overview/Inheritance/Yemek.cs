@@ -1,5 +1,6 @@
 ﻿namespace Inheritance
 {
+
     public class Yemek
     {
         public string Ad { get; set; }

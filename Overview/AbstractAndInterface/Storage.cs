@@ -1,5 +1,7 @@
 ﻿namespace AbstractAndInterface
 {
+
+
     public abstract class Storage
     {
         public int MaxCapacity { get; set; }
@@ -10,26 +12,31 @@
             Console.WriteLine("Yedeği oluşturuldu");
         }
 
-        public abstract void RecordData();
+
         public abstract void ReadData();
 
 
     }
 
-    public class ExcelStorage : Storage
+    public interface IRecordable
+    {
+        void RecordData();
+    }
+
+    public class ExcelStorage : Storage, IRecordable
     {
         public override void ReadData()
         {
             Console.WriteLine("Excel'den okunuyor");
         }
 
-        public override void RecordData()
+        public void RecordData()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Excel'e yazılıyor");
         }
     }
 
-    public class DBStorage : Storage
+    public class DBStorage : Storage, IRecordable
     {
         public override void ReadData()
         {
@@ -37,9 +44,10 @@
 
         }
 
-        public override void RecordData()
+        public void RecordData()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("DB'e yazılıyor");
+
         }
     }
 
@@ -51,9 +59,14 @@
 
         }
 
-        public override void RecordData()
+
+    }
+
+    public class DataRecorder
+    {
+        public void Record(IRecordable storage)
         {
-            throw new NotImplementedException();
+            storage.RecordData();
         }
     }
 
