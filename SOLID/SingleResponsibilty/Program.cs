@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-changeBackgroundColor(ConsoleColor.Red)
+changeBackgroundColor(ConsoleColor.Red);
 
 Console.Write("Ürün adını giriniz: >");
 string productName = Console.ReadLine();
