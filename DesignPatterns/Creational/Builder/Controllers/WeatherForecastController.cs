@@ -1,3 +1,4 @@
+using Builder.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Builder.Controllers
@@ -29,5 +30,12 @@ namespace Builder.Controllers
             })
             .ToArray();
         }
+        [HttpGet("[action]")]
+        public IActionResult BuildDocument()
+        {
+            var html = new PageBuilder().BuildHtmlPage();
+            return Ok(html);
+        }
+
     }
 }

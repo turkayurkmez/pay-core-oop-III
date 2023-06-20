@@ -59,4 +59,20 @@
         public string Table { get; set; }
     }
 
+    public class PageBuilder
+    {
+        public HTMLPage BuildHtmlPage()
+        {
+            HtmlPageBuilder htmlPageBuilder = new HtmlPageBuilder();
+            htmlPageBuilder.BuildHeader();
+            htmlPageBuilder.BuildContent();
+            htmlPageBuilder.BuildFooter();
+            htmlPageBuilder.BuildMenu();
+            htmlPageBuilder.BuildTable();
+
+            return htmlPageBuilder.Build();
+
+        }
+    }
+
 }
