@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using Bridge;
+
 Console.WriteLine("Hello, World!");
 
 
@@ -15,3 +17,5 @@ Console.WriteLine("Hello, World!");
  *     
  */
 
+SalesReport salesReport = new SalesReport();
+salesReport.Format = new Pdf();

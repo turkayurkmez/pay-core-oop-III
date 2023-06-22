@@ -1,12 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Bridge
+﻿namespace Bridge
 {
-    internal class DP
+    public class Report
     {
+        public Format Format { get; set; }
     }
+
+
+    public class SalesReport : Report
+    {
+
+    }
+
+    public class PerformanceReport : Report
+    {
+
+    }
+
+    public class Format
+    {
+
+    }
+
+    public class Pdf : Format
+    {
+
+    }
+
+    public class Excel : Format
+    {
+
+    }
+
+
 }
