@@ -55,6 +55,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateMethod", "Behaviora
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor", "Behavioral\Visitor\Visitor.csproj", "{7247DA76-01CE-47AA-B3B6-7083B3275349}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strategy.csproj", "{F1CA1421-B0B8-4D31-81FD-8280E42605C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{7247DA76-01CE-47AA-B3B6-7083B3275349}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7247DA76-01CE-47AA-B3B6-7083B3275349}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7247DA76-01CE-47AA-B3B6-7083B3275349}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1CA1421-B0B8-4D31-81FD-8280E42605C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1CA1421-B0B8-4D31-81FD-8280E42605C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1CA1421-B0B8-4D31-81FD-8280E42605C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1CA1421-B0B8-4D31-81FD-8280E42605C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -181,6 +187,7 @@ Global
 		{76F1E59E-BE10-40C9-B93E-847FE4502F63} = {3F8B018B-D170-4571-A91C-42D27FD58C23}
 		{F71DEF3E-3FEC-4817-9AF4-7FCA88770D1A} = {3F8B018B-D170-4571-A91C-42D27FD58C23}
 		{7247DA76-01CE-47AA-B3B6-7083B3275349} = {3F8B018B-D170-4571-A91C-42D27FD58C23}
+		{F1CA1421-B0B8-4D31-81FD-8280E42605C6} = {3F8B018B-D170-4571-A91C-42D27FD58C23}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {68389713-9D08-48E2-B17D-1EF096F6A01B}
